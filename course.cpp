@@ -3,7 +3,9 @@
 
 using namespace std;
 
-Course::Course(string courseID, string creditHours, float grade) m_courseNumber(courseID), m_creditHours(creditHours), m_grade(grade) {}
+Course::Course(string courseID, string creditHours, float grade) m_courseNumber(courseID), m_creditHours(creditHours), m_grade(grade) {
+    next = nullptr
+}
 
 Course::addCourse(string courseID, string creditHours, float grade) {
     if (courseID == "") {

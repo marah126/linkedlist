@@ -4,6 +4,7 @@
 
 Student::Student(string ID): m_major(ID) {
     courses = nullptr;
+    next = nullptr;
 }
 
 // void Student::addStudent(string studentID) {
@@ -52,14 +53,26 @@ const string Student::getStudentID() {
 }
 
 string Student::getStudentName() {
+    if (m_name.empty()) {
+        cout << "Student name is not initialized";
+        return "";
+    }
     return m_name;
 }
 
 string Student::getStudentMajor() {
+    if (m_major.empty()) {
+        cout << "Student name is not initialized";
+        return "";
+    }
     return m_major;
 }
 
 string Student::getStudentBirthdate() {
+    if (m_ID.m_birthdate()) {
+        cout << "Student name is not initialized";
+        return "";
+    }
     return m_birthdate;
 }
 
