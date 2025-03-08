@@ -33,5 +33,4 @@ public:
     float getGrade(string courseID);
     float getAverage();
     void printInfo();
-
 };
