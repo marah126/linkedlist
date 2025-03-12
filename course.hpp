@@ -3,15 +3,15 @@
 using namespace std;
 
 class Course {
-private: 
+private:
     const string m_courseNumber;
     int m_creditHours;
     float m_grade;
 
-    Course(string courseID, string creditHours);
 
 public:
-    Courses* next;
+    Course(string courseID, int creditHours);
+    Course* next;
     // Course addCourse(string courseID, string creditHours);
     void setGrade(float grade);
     float getGrade();
